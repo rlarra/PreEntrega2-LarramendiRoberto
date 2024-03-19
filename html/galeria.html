@@ -18,7 +18,7 @@
       }
 
       .container {
-        background-color: #000000; /* Fondo blanco del contenedor */
+        background-color: #000000; /* Fondo negro del contenedor */
         border: 1px solid #000; /* Bordes negros del contenedor */
         border-radius: 10px; /* Esquinas redondeadas del contenedor */
         padding: 20px; /* Espaciado interno del contenedor */
@@ -27,11 +27,59 @@
 
       h1 {
         text-align: center;
-        color: hsl(0, 0%, 100%); 
+        color: hsl(0, 0%, 100%); /* Texto blanco */
       }
+
+      .img-fluid {
+        transition: transform 0.3s ease;
+      }
+
+      .img-fluid:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+
+      .modal-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+
+      .modal-content img {
+        max-width: 90%;
+        max-height: 90%;
+      }
+       /* Estilos para el botón de regreso */
+       .back-to-home {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+        }
     </style>
   </head>
   <body>
+     <!-- Botón de regreso a la página de inicio (HOME) -->
+     <a href="http://127.0.0.1:5500/index.html" class="back-to-home">Regresar a HOME</a>
+
     <div class="container mt-5">
       <h1>GALERIA DE FOTOS</h1>
       <div class="row">
@@ -41,6 +89,7 @@
             src="img/Captura de pantalla 2024-02-05 175721.png"
             class="img-fluid"
             alt="Imagen 1"
+            onclick="openModal('img/Captura de pantalla 2024-02-05 175721.png')"
           />
         </div>
         <div class="col-md-4 mb-3">
@@ -48,6 +97,7 @@
             src="img/Captura de pantalla 2024-02-05 175826.png"
             class="img-fluid"
             alt="Imagen 2"
+            onclick="openModal('img/Captura de pantalla 2024-02-05 175826.png')"
           />
         </div>
         <div class="col-md-4 mb-3">
@@ -55,6 +105,7 @@
             src="img/Captura de pantalla 2024-02-05 180131.png"
             class="img-fluid"
             alt="Imagen 3"
+            onclick="openModal('img/Captura de pantalla 2024-02-05 180131.png')"
           />
         </div>
         <div class="col-md-4 mb-3">
@@ -62,6 +113,7 @@
             src="img/Captura de pantalla 2024-02-05 175923.png"
             class="img-fluid"
             alt="Imagen 4"
+            onclick="openModal('img/Captura de pantalla 2024-02-05 175923.png')"
           />
         </div>
         <div class="col-md-4 mb-3">
@@ -69,6 +121,7 @@
             src="img/Captura de pantalla 2024-02-05 180016.png"
             class="img-fluid"
             alt="Imagen 5"
+            onclick="openModal('img/Captura de pantalla 2024-02-05 180016.png')"
           />
         </div>
         <div class="col-md-4 mb-3">
@@ -76,6 +129,7 @@
             src="img/Captura de pantalla 2024-02-05 180105.png"
             class="img-fluid"
             alt="Imagen 6"
+            onclick="openModal('img/Captura de pantalla 2024-02-05 180105.png')"
           />
         </div>
 
@@ -83,6 +137,13 @@
       </div>
     </div>
     
+    <!-- Modal -->
+    <div id="myModal" class="modal" onclick="closeModal()">
+      <div class="modal-content">
+        <img id="modal-img" src="" alt="Imagen ampliada">
+      </div>
+    </div>
+
     <footer class="footer mt-5" style="color: white;">
       <div class="container">
         <div class="row">
@@ -102,6 +163,20 @@
       </div>
     </footer>
 
+    <script>
+      function openModal(imgSrc) {
+        var modal = document.getElementById("myModal");
+        var modalImg = document.getElementById("modal-img");
+        modal.style.display = "block";
+        modalImg.src = imgSrc;
+      }
+
+      function closeModal() {
+        var modal = document.getElementById("myModal");
+        modal.style.display = "none";
+      }
+    </script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
       integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
@@ -114,3 +189,4 @@
     ></script>
   </body>
 </html>
+

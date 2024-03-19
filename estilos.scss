@@ -1,8 +1,7 @@
-@charset "UTF-8";
 /* Estilos para el cuerpo de la página */
 body {
-  background-color: #000;
-  color: #fff;
+    background-color: #000;
+    color: #fff;
 }
 
 /* Estilos para la barra de navegación */
@@ -13,34 +12,34 @@ body {
 
 .navbar-brand,
 .navbar-nav .nav-link {
-  color: #fff !important; /* Letras blancas */
+   color: #fff !important; /* Letras blancas */
 }
 
 /* Estilos para el botón del menú en dispositivos móviles */
 .navbar-toggler-icon {
-  background-color: #333;
+    background-color: #333;
 }
 
 /* Estilos para el contenido de la página */
 .container {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 .navbar-brand img {
-  height: 80px;
+    height: 80px;
 }
-
 /* Estilos para el pie de página */
+
 .jumbotron {
-  height: 450px;
-  background-image: url(img/maquina.jpg);
-  background-color: #000;
+    height: 450px;
+    background-image: url(img/maquina.jpg);
+    background-color: #000;
 }
 
 .footer {
   background-color: #333; /* Fondo del pie de página */
-  color: #fff;
-  padding: 20px 0;
+    color: #fff;
+    padding: 20px 0;
 }
 
 .footer p {
@@ -49,12 +48,13 @@ body {
 
 /* Establecer el tamaño deseado para las imágenes del carrusel */
 .carousel img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
 }
 
 /* Estilos personalizados */
+
 body {
   background-color: hsl(0, 0%, 0%); /* Fondo gris */
 }
@@ -68,12 +68,12 @@ body {
 }
 
 h1 {
-  text-align: center;
-  color: hsl(0, 0%, 100%); /* Texto blanco */
+    text-align: center;
+    color: hsl(0, 0%, 100%); /* Texto blanco */
 }
 
 .carousel {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 .footer {
@@ -81,5 +81,3 @@ h1 {
   color: #ffffff; /* Texto blanco del footer */
   padding: 20px; /* Espaciado interno del footer */
 }
-
-/*# sourceMappingURL=estilos.css.map */
