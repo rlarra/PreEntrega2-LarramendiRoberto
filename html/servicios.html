@@ -1,68 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    rel="stylesheet"
+  />
     <title>LAUTYBARBER</title>
     <style>
-     body {
-        background-color: #000;
-        color: #fff;
-        font-family: "Arial", sans-serif;
-        text-align: center;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
-        overflow-y: auto;
+        body {
+            background-image: url('img/FONDO100.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: "Arial", sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            overflow-y: auto;
+            color: #fff;
+        }
+        
+        main {
+            text-align: left;
+            max-width: 90%;
+            margin: 20px auto 10px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .title {
+            color: #fada5e;
+            font-size: 6vw;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        .payment-info {
+            margin-bottom: 30px;
+            text-align: left;
+        }
+        
+        .prices-container {
+            background-color: hsl(48, 60%, 65%);
+            padding: 5%;
+            border-radius: 20px;
+            max-height: 60vh;
+            overflow-y: auto;
+            text-align: center;
+        }
+        
+        h1, h2 {
+            margin: 20px 0;
+            color: #000;
+        }
+        
+        button {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
       }
 
-      main {
-        text-align: left;
-        max-width: 90%;
-        margin: 20px auto 10px; /* Ajuste de margen */
-        padding: 10px; /* Ajuste de padding */
-      }
-
-      .title {
-        color: #fada5e;
-        font-size: 6vw;
-        font-weight: bold;
-        margin-bottom: 10px; /* Reducción del espacio inferior */
-      }
-
-      .payment-info {
-        margin-bottom: 10px; /* Reducción del espacio inferior */
-      }
-
-      .prices-container {
-        background-color: #fada5e;
-        padding: 5%;
-        border-radius: 10px;
-        max-height: 60vh;
-        overflow-y: auto;
-      }
-
-      h1,
-      h2 {
-        margin: 10px 0;
-        color: #000;
-      }
-
-      footer {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        background-color: #000;
-        padding: 10px;
-      }
-
-      footer p {
-        color: #fff;
-        margin: 0;
+      button:hover {
+        background-color: gray;
       }
 
       /* Estilos para el botón de regreso */
@@ -70,67 +84,142 @@
         position: fixed;
         top: 20px;
         left: 20px;
-        background-color: #007bff;
-        color: white;
+        background-color: hwb(184 14% 29%);
+        color: black;
         padding: 10px 20px;
         border: none;
         border-radius: 4px;
         cursor: pointer;
         text-decoration: none;
+        transition: background-color 0.3s; /* Transición de color de fondo */
       }
 
-      /* Media query para ajustar estilos en pantallas pequeñas */
-      @media (max-width: 600px) {
-        .title {
-          font-size: 10vw;
-        }
-
-        .prices-container {
-          max-height: 80vh;
-        }
+      .back-to-home:hover {
+        background-color: #e3e35c;
       }
+
+
+        
+        /* Media query para ajustar estilos en pantallas pequeñas */
+        @media (max-width: 600px) {
+            .title {
+                font-size: 10vw;
+            }
+        
+            .prices-container {
+                max-height: 80vh;
+            }
+        }
+          /* Estilos para los iconos de redes sociales */
+      .social-icons-container {
+        margin-top: 20px; /* Espacio entre el formulario y los iconos */
+        text-align: center; /* Centrar los iconos */
+      }
+
+      .social-icon {
+        font-size: 3em;
+        margin: 0 0.5em; /* Espacio entre los iconos */
+        color: white;
+      }
+
+      /* Estilos para los enlaces de redes sociales */
+      .social-icon:hover {
+        color: yellow;
+      }
+      .navbar-brand img {
+      width: auto; /* Anchura automática */
+      max-height: 200px; /* Altura máxima */
+      }
+      
+      .navbar-nav {
+        margin-left: auto; /* Mueve los elementos a la derecha */
+      }
+
+      .nav-link {
+        font-size: 20px; /* Ajusta el tamaño del texto de las solapas */
+        padding: 10px 20px; /* Ajusta el espacio dentro de las solapas */
+      }
+
     </style>
-  </head>
-  <body>
-    <!-- Botón de regreso a la página de inicio (HOME) -->
-    <a href="http://127.0.0.1:5500/index.html" class="back-to-home"
-      >Regresar a HOME</a
-    >
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"
+        ><img src="img/logolauty1020.png" alt="" />
+        </a
+      >  
+  <!-- Botón de regreso a la página de inicio (HOME) -->
+    
+    <a href="http://127.0.0.1:5500/index.html" class="back-to-home">Regresar a HOME</a>
 
     <main class="centered">
-      <div class="title">LAUTYBARBER</div>
-      <div class="payment-info">
-        <p>
-          En LAUTYBARBER, nos mantenemos informados sobre las fluctuaciones
-          económicas del país, y nos esforzamos por brindarte opciones que se
-          adapten a tu presupuesto. Queremos informarte que ofrecemos diversas
-          modalidades de pago para tu conveniencia, incluyendo:
-        </p>
-        <ul>
-          <li>Efectivo</li>
-          <li>Transferencia bancaria</li>
-          <li>Mercado Pago</li>
-          <li>Cuenta DNI</li>
-        </ul>
-        <p>
-          Estamos comprometidos a brindarte flexibilidad y comodidad en tus
-          transacciones, asegurándonos de que encuentres la opción que mejor se
-          ajuste a tus necesidades.
-        </p>
-      </div>
-      <div class="prices-container">
-        <h1>💵 PRECIOS 💵</h1>
-        <h2>CORTE DE CABELLO ------------ 💲4000</h2>
-        <h2>CORTE Y BARBA ------------------ 💲5000</h2>
-        <h2>LINEAS DE DISEÑO --------------- 💲500</h2>
-        <h2>PERFILADO DE CEJAS----------- 💲500</h2>
-        <h2>BARBA -------------------------------- 💲2500</h2>
-      </div>
+        
+        <div class="payment-info">
+            <p>
+                En LAUTYBARBER, nos mantenemos informados sobre las fluctuaciones
+                económicas del país, y nos esforzamos por brindarte opciones que se
+                adapten a tu presupuesto. Queremos informarte que ofrecemos diversas
+                modalidades de pago para tu conveniencia, incluyendo:
+            </p>
+            <ul>
+                <li>Efectivo</li>
+                <li>Transferencia bancaria</li>
+                <li>Mercado Pago</li>
+                <li>Cuenta DNI</li>
+            </ul>
+            <p>
+                Estamos comprometidos a brindarte flexibilidad y comodidad en tus
+                transacciones, asegurándonos de que encuentres la opción que mejor se
+                ajuste a tus necesidades.
+            </p>
+        </div>
+        <div class="prices-container">
+            <h1>💵 PRECIOS 💵</h1>
+            <h2>CORTE DE CABELLO ------------ 💲4000</h2>
+            <h2>CORTE Y BARBA ------------------ 💲5000</h2>
+            <h2>LINEAS DE DISEÑO --------------- 💲500</h2>
+            <h2>PERFILADO DE CEJAS----------- 💲500</h2>
+            <h2>BARBA -------------------------------- 💲2500</h2>
+        </div>
     </main>
 
-    <footer>
-      <p>Pedro Ferre 13, Isidro Casanova (CP1757)</p>
-      <p>Tel: (011) 456-7890 / 4056-7890</p>
+    <footer class="footer mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h5>DIRECCION</h5>
+            <p><i class="fas fa-building"></i> Pedro Ferre 13, Isidro Casanova (CP1765)</p>
+            <p>Buenos Aires, Argentina</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <h5 class="text-end">TELEFONOS DE CONTACTO</h5>
+            <p class="text-end">
+              <i class="fas fa-phone-alt"></i> Tel: (011) 456-7890
+            </p>
+            <p class="text-end">
+              <i class="fas fa-phone-alt"></i> Tel: 4056-7890
+            </p>
+          </div>
+        </div>
+        <!-- Redes Sociales -->
+        <div class="row mt-3">
+          <div class="col-md-12">
+            <div class="social-icons-container">
+              <a href="#" class="social-icon"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-icon"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="https://wa.me/5491123456789" class="social-icon"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
-  </body>
+</body>
 </html>

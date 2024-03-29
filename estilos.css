@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* Estilos para el cuerpo de la página */
 body {
-  background-color: #000;
+  background-color: white;
   color: #fff;
 }
 
@@ -27,14 +27,21 @@ body {
 }
 
 .navbar-brand img {
-  height: 80px;
+  height: 90px;
 }
+.navbar-brand {
+  font-size: 50px;
+  font-family: 'Roboto', sans-serif; /* Agregar la fuente Roboto */
+}
+
+
 
 /* Estilos para el pie de página */
 .jumbotron {
   height: 450px;
-  background-image: url(img/maquina.jpg);
-  background-color: #000;
+  background-image: url(img/FONDO9.jpg);
+  background-color: black;
+  background-size: cover; 
 }
 
 .footer {
@@ -56,7 +63,7 @@ body {
 
 /* Estilos personalizados */
 body {
-  background-color: hsl(0, 0%, 0%); /* Fondo gris */
+  background-color: rgb(6, 6, 6); /* Fondo gris */
 }
 
 .container {
