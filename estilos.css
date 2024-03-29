@@ -91,52 +91,6 @@ h1 {
 
 /*# sourceMappingURL=estilos.css.map */
 
- /* Personalización INDEX CSS */
- .navbar-brand img {
-  width: auto; /* Anchura automática */
-  max-height: 100px; /* Altura máxima */
-}
-
-.navbar-nav {
-  margin-left: auto; /* Mueve los elementos a la derecha */
-}
-
-.nav-link {
-  font-size: 20px; /* Ajusta el tamaño del texto de las solapas */
-  padding: 10px 20px; /* Ajusta el espacio dentro de las solapas */
-}
-
-.nav-link:hover {
-  background-color: #343a40 !important; /* Cambia el color de fondo al pasar el ratón */
-}
-
-/* Animación para cambiar el color del texto */
-@keyframes changeColor {
-  0% {
-    color: white;
-  }
-  25% {
-    color: gray;
-  }
-  50% {
-    color: white;
-  }
-  75% {
-    color: grey;
-  }
-  100% {
-    color: white;
-  }
-}
-
-.animated-text {
-  animation: changeColor 5s infinite; /* Aplica la animación con duración de 5 segundos y repetición infinita */
-  font-size: 30px; /* Ajusta el tamaño del texto */
-  text-align: center; /* Centra el texto */
-  padding: 10px; /* Añade un relleno alrededor del texto */
-  text-shadow: 2px 2px 0 black, -2px -2px 0 black, 2px -2px 0 black,
-    -2px 2px 0 black; /* Agrega un borde al texto */
-}
 
   /* Estilos personalizados GALERIA CSS*/
   body {
@@ -214,3 +168,49 @@ margin-top: 20px; /* Margen superior del contenedor */
     background-color: white; /* Cambia el color de fondo a blanco al pasar el mouse */
     color: hsl(0, 0%, 0%); /* Cambia el color del texto a gris */
   }
+   /* Personalización INDEX CSS */
+ .navbar-brand img {
+  width: auto; /* Anchura automática */
+  max-height: 100px; /* Altura máxima */
+}
+
+.navbar-nav {
+  margin-left: auto; /* Mueve los elementos a la derecha */
+}
+
+.nav-link {
+  font-size: 20px; /* Ajusta el tamaño del texto de las solapas */
+  padding: 10px 20px; /* Ajusta el espacio dentro de las solapas */
+}
+
+.nav-link:hover {
+  background-color: #343a40 !important; /* Cambia el color de fondo al pasar el ratón */
+}
+
+/* Animación para cambiar el color del texto */
+@keyframes changeColor {
+  0% {
+    color: white;
+  }
+  25% {
+    color: gray;
+  }
+  50% {
+    color: white;
+  }
+  75% {
+    color: grey;
+  }
+  100% {
+    color: white;
+  }
+}
+
+.animated-text {
+  animation: changeColor 5s infinite; /* Aplica la animación con duración de 5 segundos y repetición infinita */
+  font-size: 30px; /* Ajusta el tamaño del texto */
+  text-align: center; /* Centra el texto */
+  padding: 10px; /* Añade un relleno alrededor del texto */
+  text-shadow: 2px 2px 0 black, -2px -2px 0 black, 2px -2px 0 black,
+    -2px 2px 0 black; /* Agrega un borde al texto */
+}
