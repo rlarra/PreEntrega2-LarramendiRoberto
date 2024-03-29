@@ -90,3 +90,127 @@ h1 {
 }
 
 /*# sourceMappingURL=estilos.css.map */
+
+ /* Personalización INDEX CSS */
+ .navbar-brand img {
+  width: auto; /* Anchura automática */
+  max-height: 100px; /* Altura máxima */
+}
+
+.navbar-nav {
+  margin-left: auto; /* Mueve los elementos a la derecha */
+}
+
+.nav-link {
+  font-size: 20px; /* Ajusta el tamaño del texto de las solapas */
+  padding: 10px 20px; /* Ajusta el espacio dentro de las solapas */
+}
+
+.nav-link:hover {
+  background-color: #343a40 !important; /* Cambia el color de fondo al pasar el ratón */
+}
+
+/* Animación para cambiar el color del texto */
+@keyframes changeColor {
+  0% {
+    color: white;
+  }
+  25% {
+    color: gray;
+  }
+  50% {
+    color: white;
+  }
+  75% {
+    color: grey;
+  }
+  100% {
+    color: white;
+  }
+}
+
+.animated-text {
+  animation: changeColor 5s infinite; /* Aplica la animación con duración de 5 segundos y repetición infinita */
+  font-size: 30px; /* Ajusta el tamaño del texto */
+  text-align: center; /* Centra el texto */
+  padding: 10px; /* Añade un relleno alrededor del texto */
+  text-shadow: 2px 2px 0 black, -2px -2px 0 black, 2px -2px 0 black,
+    -2px 2px 0 black; /* Agrega un borde al texto */
+}
+
+  /* Estilos personalizados GALERIA CSS*/
+  body {
+    background-image: url('../img/FONDO9.jpg'); /* Fondo gris */
+  }
+
+  .container {
+background-image: url('../img/carnival-8159822.jpg'); /* URL de la imagen */
+
+
+border-radius: 10px; /* Esquinas redondeadas del contenedor */
+padding: 20px; /* Espaciado interno del contenedor */
+margin-top: 20px; /* Margen superior del contenedor */
+}
+  p {
+     color: white; /* Texto blanco */
+     font-size: 30px;
+  }
+  h5 {
+    color: white; /* Texto blanco */
+    font-size: 35px;
+  }
+  h1 {
+    text-align: center;
+    color: white; /* Texto blanco */
+  }
+
+  .img-fluid {
+    transition: transform 0.3s ease;
+  }
+
+  .img-fluid:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+  }
+
+  .modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .modal-content img {
+    max-width: 90%;
+    max-height: 90%;
+  }
+  /* Estilos para el botón de regreso */
+  .back-to-home {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: rgb(53, 53, 53); /* Color de fondo gris */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s; /* Transición de color de fondo */
+  }
+
+  .back-to-home:hover {
+    background-color: white; /* Cambia el color de fondo a blanco al pasar el mouse */
+    color: hsl(0, 0%, 0%); /* Cambia el color del texto a gris */
+  }
