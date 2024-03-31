@@ -1,0 +1,183 @@
+body {
+  background-image: url("../img/FONDO9.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow-y: auto;
+  color: #fff;
+}
+
+main {
+  text-align: left;
+  max-width: 90%;
+  margin: 20px auto 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  color: gray;
+  font-size: 6vw;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.payment-info {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.prices-container {
+  background-image: url("../img/FONDO9.jpg");
+  padding: 5%;
+  border-radius: 20px;
+  max-height: 60vh;
+  overflow-y: auto;
+  text-align: center;
+}
+.rounded-logo {
+  border-radius: 50%;
+}
+
+h1,
+h2 {
+  margin: 15px 0;
+  color: white;
+}
+
+h5,
+p,
+ul {
+  color: white;
+  font-size: 25px;
+  text-align: center; /* Centra el texto horizontalmente */
+  font-weight: bold; /* Establece el texto en negrita */
+  text-shadow: 0 0 10px black; /* Agrega un borde blanco alrededor del texto */
+  text-align: left;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: gray;
+}
+
+/* Estilos para el botón de regreso */
+.back-to-home {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: hwb(184 14% 29%);
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s; /* Transición de color de fondo */
+}
+
+.back-to-home:hover {
+  background-color: gray;
+}
+
+/* Estilos para el botón de regreso */
+
+.back-to-home {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: hsl(28, 92%, 33%);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s; /* Transición de color de fondo */
+}
+.back-to-home {
+  display: block;
+  position: fixed;
+  top: 10px; /* Separación desde la parte superior */
+  left: 10px; /* Separación desde el lado izquierdo */
+  text-decoration: none;
+  border-radius: 15px; /* Bordes redondeados */
+  background-color: black; /* Color de fondo negro */
+  padding: 10px; /* Ajusta el espacio alrededor del enlace */
+}
+
+.logo-container {
+  text-align: center;
+}
+
+.logo-img {
+  width: 100px;
+  height: auto;
+}
+
+.back-to-home:hover {
+  background-color: black;
+}
+
+/* Media query para ajustar estilos en pantallas pequeñas */
+@media (max-width: 600px) {
+  .title {
+    font-size: 10vw;
+  }
+
+  .prices-container {
+    max-height: 80vh;
+  }
+}
+/* Estilos para los iconos de redes sociales */
+.social-icons-container {
+  margin-top: 20px; /* Espacio entre el formulario y los iconos */
+  text-align: center; /* Centrar los iconos */
+  margin-bottom: 20px;
+}
+
+.social-icon {
+  font-size: 3em;
+  margin: 0 0.5em; /* Espacio entre los iconos */
+  color: white;
+}
+
+/* Estilos para los enlaces de redes sociales */
+.social-icon:hover {
+  color: #000000;
+}
+.navbar-brand img {
+  width: auto; /* Anchura automática */
+  max-height: 200px; /* Altura máxima */
+}
+
+.navbar-nav {
+  margin-left: auto; /* Mueve los elementos a la derecha */
+}
+
+.nav-link {
+  font-size: 20px; /* Ajusta el tamaño del texto de las solapas */
+  padding: 10px 20px; /* Ajusta el espacio dentro de las solapas */
+}

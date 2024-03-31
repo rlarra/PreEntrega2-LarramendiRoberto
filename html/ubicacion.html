@@ -7,131 +7,70 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="estilos4.css" />
     <title>LAUTYBARBER</title>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: "Arial", sans-serif;
-        background: url("../img/clipper-8254064.jpg") center center/cover fixed; /* Cambiado el background */
-        min-height: 100vh;
-        display: flex;
-        justify-content: center; /* Centra horizontalmente los elementos */
-        align-items: center; /* Centra verticalmente los elementos */
-        flex-direction: column; /* Alinea los elementos en una columna */
-      }
-
-      /* Estilos para el botón de regreso */
-      .back-to-home {
-        position: fixed;
-        top: 20px;
-        left: 20px;
-        background-color: hsl(210, 4%, 20%);
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        text-decoration: none;
-      }
-      .back-to-home:hover {
-        background-color: black; /* Cambia el color de fondo a blanco al pasar el mouse */
-        color: white; /* Cambia el color del texto */
-      }
-
-      iframe {
-        border: 7px solid black; /* Borde negro y grueso */
-        border-radius: 15px; /* Esquinas redondeadas */
-        width: 100%; /* Cambiamos el ancho del iframe para que ocupe todo el contenedor */
-        max-width: 600px; /* Establecemos un ancho máximo para evitar que el mapa sea demasiado grande */
-        height: 500px; /* Establecemos una altura fija */
-        margin-bottom: 10px; /* Añadido margen inferior para separar el mapa de las letras */
-      }
-
-      h1, h2, h5, p {
-        color: black; /* Cambiado el color del texto a blanco */
-        text-align: center; /* Centra el texto horizontalmente */
-        font-weight: bold; /* Establece el texto en negrita */
-        text-shadow: 0 0 20px white; /* Agrega un borde blanco alrededor del texto */
-        font-size: 25px; /* Establece el tamaño de la fuente */
-        border-radius: 15px white;
-        margin-bottom: 20px;
-        padding:  20px;
-      }
-
-      /* Media query para pantallas más pequeñas */
-      @media screen and (max-width: 768px) {
-        h1,
-        h2 {
-          font-size: 24px; /* Reducimos el tamaño de la fuente en pantallas más pequeñas */
-          margin-bottom: 20px;
-        }
-      }
-    </style>
   </head>
   <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="../img/logolauty1020.png" alt="" class="rounded-logo" />
+        </a>
+      </div>
+    </nav>
     <!-- Botón de regreso a la página de inicio (HOME) -->
-    <a href="../index.html" class="back-to-home"
-      >Regresar a HOME</a
-    >
+    <a href="../index.html" class="back-to-home">
+      <div class="logo-container">
+        <img src="../img/logolauty1020.png" alt="Logo" class="logo-img" />
+      </div>
+      <div class="text-container"> 🢀 REGRESAR</div>
+    </a>
+    <h1>COMO LLEGAR A LA BARBERIA?</h1>
 
     <div class="container">
       <div>
-        <h1>COMO LLEGAR A LA BARBERIA?</h1>
-
-          <iframe
+        <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.2414317861208!2d-58.602396825082835!3d-34.69908997292022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc65ff6c2d669%3A0xffc5d8790f2ab349!2sGYA%2C%20Pedro%20Ferr%C3%A9%2013%2C%20B1765%20Isidro%20Casanova%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1707090002011!5m2!1ses-419!2sar"
-          ></iframe>
+        ></iframe>
       </div>
     </div>
 
     <footer class="footer mt-5">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6 text-md-start">
             <h5>DIRECCION</h5>
-            <p><i class="fas fa-building"></i> Pedro Ferre 13, Isidro Casanova (CP1765)</p>
-            <p>Buenos Aires, Argentina</p>
+            <div>
+              <p>
+                <i class="fas fa-building"></i> Pedro Ferre 13, Isidro Casanova
+                (CP1765)
+              </p>
+              <p>Buenos Aires, Argentina</p>
+            </div>
           </div>
           <div class="col-md-6 text-md-end">
-            <!-- Alinea los elementos a la derecha en pantallas de tamaño medio y superior -->
             <h5>TELEFONOS DE CONTACTO</h5>
-            <p><i class="fas fa-phone-alt"></i> Tel: (011) 456-7890</p>
-            <p><i class="fas fa-phone-alt"></i> Tel: 4056-7890</p>
+            <div>
+              <p><i class="fas fa-phone-alt"></i> Tel: (011) 456-7890</p>
+              <p><i class="fas fa-phone-alt"></i> Tel: 4056-7890</p>
+            </div>
           </div>
         </div>
         <!-- Redes Sociales -->
-        <div class="row mt-3">
-          <div class="col-md-6 offset-md-3 text-center">
-            <a
-              href="#"
-              class="social-icon"
-              style="font-size: 3em; color: #b81251;"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a
-              href="#"
-              class="social-icon"
-              style="
-                font-size: 3em;
-                margin-left: 1em;
-                margin-right: 1em;
-                color: white;
-              "
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <a
-              href="#"
-              class="social-icon"
-              style="font-size: 3em; margin-right: 1em; color: #1824a7"
-              ><i class="fab fa-facebook"></i
-            ></a>
-            <a
-              href="https://wa.me/5491123456789"
-              class="social-icon"
-              style="font-size: 3em; color: #39cb43"
-              ><i class="fab fa-whatsapp"></i
-            ></a>
+        <div class="row mt-3 justify-content-center">
+          <div class="col-md-12 text-center">
+            <div class="social-icons-container">
+              <a href="#" class="social-icon"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-icon"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="https://wa.me/5491123456789" class="social-icon"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </div>
           </div>
         </div>
       </div>
