@@ -5,10 +5,8 @@ body {
 }
 
 /* Estilos para la barra de navegación */
-
 .navbar {
   background-color: black; /* Fondo negro de la barra de navegación */
-
   border-bottom: 1px solid rgb(29, 177, 203); /* Borde inferior gris */
 }
 
@@ -18,7 +16,6 @@ body {
 }
 
 /* Estilos para el botón del menú en dispositivos móviles */
-
 .navbar-toggler-text {
   color: white; /* Color del texto */
   margin-left: 5px; /* Espacio a la izquierda del texto */
@@ -35,6 +32,7 @@ body {
 .navbar-brand img {
   height: 140px;
 }
+
 .navbar-brand {
   font-size: 50px;
   font-family: "Roboto", sans-serif; /* Agregar la fuente Roboto */
@@ -82,13 +80,16 @@ h1 {
   text-align: center;
   color: hsl(0, 0%, 100%); /* Texto blanco */
 }
+
 h3 {
   font-size: 25px;
 }
+
 h5 {
   font-size: 25px;
   font-weight: bold; /* Establece el texto en negrita */
 }
+
 p {
   font-size: 35px;
 }
@@ -139,7 +140,6 @@ p {
     color: white;
   }
 }
-
 .animated-text {
   animation: changeColor 5s infinite; /* Aplica la animación con duración de 5 segundos y repetición infinita */
   font-size: 25px; /* Ajusta el tamaño del texto */
@@ -148,7 +148,6 @@ p {
 }
 
 /* Estilos para las solapas de la barra de navegación */
-
 /* Estilos para el logo en la barra de navegación */
 .navbar-brand {
   background-color: black; /* Fondo negro para el logo */
@@ -158,31 +157,24 @@ p {
   margin-block: 10px;
   position: relative;
 }
+
+/* Estilos para los iconos de redes sociales */
 /* Estilos para los iconos de redes sociales */
 .social-icons-container {
-  margin-top: 20px; /* Espacio entre el formulario y los iconos */
-  text-align: center; /* Centrar los iconos */
-}
+    margin-top: 20px; /* Espacio entre el formulario y los iconos */
+    text-align: center; /* Centrar los iconos */
+  }
+  
+  .social-icon {
+    font-size: 3em;
+    margin: 0 0.5em; /* Espacio entre los iconos */
+    color: white;
+  }
+  
+  /* Estilos para los enlaces de redes sociales */
+  .social-icon:hover {
+    color: skyblue;
+  }
+  
 
-.social-icon {
-  font-size: 3em;
-  margin: 0 0.5em; /* Espacio entre los iconos */
-  color: white;
-}
-
-/* Estilos para los enlaces de redes sociales */
-.social-icon:hover {
-  color: skyblue;
-}
-
-.logo-container {
-  display: flex;
-  align-items: center; /* Centra verticalmente los elementos */
-}
-
-.logo-img {
-  width: 120px; /* Ajusta el tamaño de la imagen según sea necesario */
-  height: auto;
-  margin-right: 100px; /* Ajusta el espacio entre la imagen y el texto */
-  margin-left: 100px;
-}
+/*# sourceMappingURL=estilos.css.map */
