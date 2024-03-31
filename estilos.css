@@ -8,7 +8,7 @@ body {
 .navbar {
   background-color: black; /* Fondo negro de la barra de navegación */
   border-bottom: 1px solid rgb(29, 177, 203); /* Borde inferior gris */
-}
+  }
 
 .navbar-brand,
 .navbar-nav .nav-link {
@@ -27,27 +27,35 @@ body {
 /* Estilos para el contenido de la página */
 .container {
   margin-top: 20px;
+ 
 }
 
 .navbar-brand img {
-  height: 140px;
+  height: 130px;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 
 .navbar-brand {
-  font-size: 50px;
-  font-family: "Roboto", sans-serif; /* Agregar la fuente Roboto */
+    font-family: "Arial", sans-serif; /* Selecciona una fuente moderna */
+    font-size: 36px; /* Tamaño de la fuente */
+    font-weight: bold; /* Negrita */
+    color: #333; /* Color del texto */
+    text-transform: uppercase; /* Convierte el texto en mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra de texto */
 }
 
 /* Estilos para el pie de página */
 .jumbotron {
   height: 450px;
   background-image: url(img/FONDO9.jpg);
-  background-color: #f6ff00;
+  background-color: black;
   background-size: cover;
 }
 
 .footer {
-  background-color: red; /* Fondo del pie de página */
+  background-color: black; /* Fondo del pie de página */
   color: #fff;
   padding: 20px 0;
 }
@@ -175,6 +183,9 @@ p {
   .social-icon:hover {
     color: skyblue;
   }
+
+  
+  
   
 
 /*# sourceMappingURL=estilos.css.map */
